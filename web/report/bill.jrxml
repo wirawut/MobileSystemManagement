@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="bill" pageWidth="550" pageHeight="500" columnWidth="510" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4a92b2b9-25c6-405d-a1c3-ff944c067cc0">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#D9C6C3">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#FFE9E6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="1e99163d-9d8a-42e5-b128-27d05c1a7cc3"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="sale_id" class="java.lang.String"/>
+	<field name="customer_id" class="java.lang.String"/>
+	<field name="user_id" class="java.lang.String"/>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="mobile_id" class="java.lang.String"/>
+	<field name="mobile_type" class="java.lang.String"/>
+	<field name="mobile" class="java.lang.String"/>
+	<field name="quantity" class="java.lang.Integer"/>
+	<field name="price_sale" class="java.lang.Integer"/>
+	<field name="price_sum" class="java.lang.Integer"/>
+	<field name="tax_rate" class="java.lang.Integer"/>
+	<field name="date_sale" class="java.sql.Date"/>
+	<field name="fname" class="java.lang.String"/>
+	<field name="lname" class="java.lang.String"/>
+	<field name="birthdate" class="java.sql.Date"/>
+	<field name="sex" class="java.lang.String"/>
+	<field name="company_id" class="java.lang.Integer"/>
+	<field name="major_id" class="java.lang.Integer"/>
+	<field name="address" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="tel" class="java.lang.String"/>
+	<field name="level_id" class="java.lang.Integer"/>
+	<field name="username" class="java.lang.String"/>
+	<field name="password" class="java.lang.String"/>
+	<field name="image" class="java.lang.String"/>
+	<field name="date_save" class="java.sql.Date"/>
+	<field name="company_name" class="java.lang.String"/>
+	<field name="company_address" class="java.lang.String"/>
+	<field name="fax" class="java.lang.String"/>
+	<field name="tax_number" class="java.lang.String"/>
+	<field name="major_name" class="java.lang.String"/>
+	<field name="major_address" class="java.lang.String"/>
+	<field name="price_total" class="java.math.BigDecimal"/>
+	<field name="price_end" class="java.math.BigDecimal"/>
+	<field name="price_tax" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="117" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="5002d194-1d6b-4f87-a381-f563b1d5cc4a" style="Title" x="0" y="0" width="510" height="33" forecolor="#000000"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[บิลเงินสด/ใบกำกับภาษีอย่างย่อ]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="78a49383-e6c4-4da5-ab1f-1e89d875f781" style="Column header" x="0" y="94" width="510" height="23" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="false" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["วันที่ "+(new SimpleDateFormat("dd MM yyyy").format(new Date()).substring(0,2))+" "
++((new SimpleDateFormat("dd MM yyyy").format(new Date()).substring(3,5)).equals("05")?"พฤษภาคม":"")
++((new SimpleDateFormat("dd MM yyyy").format(new Date()).substring(3,5)).equals("01")?"มกราคม":"")
++((new SimpleDateFormat("dd MM yyyy").format(new Date()).substring(3,5)).equals("02")?"กุมภาพันธ์":"")
++((new SimpleDateFormat("dd MM yyyy").format(new Date()).substring(3,5)).equals("03")?"มีนาคม":"")
++((new SimpleDateFormat("dd MM yyyy").format(new Date()).substring(3,5)).equals("04")?"เมษายน":"")
++((new SimpleDateFormat("dd MM yyyy").format(new Date()).substring(3,5)).equals("06")?"มิถุนายน":"")
++((new SimpleDateFormat("dd MM yyyy").format(new Date()).substring(3,5)).equals("07")?"กรกฎาคม":"")
++((new SimpleDateFormat("dd MM yyyy").format(new Date()).substring(3,5)).equals("08")?"สิงหาคม":"")
++((new SimpleDateFormat("dd MM yyyy").format(new Date()).substring(3,5)).equals("09")?"กันยายน":"")
++((new SimpleDateFormat("dd MM yyyy").format(new Date()).substring(3,5)).equals("10")?"ตุลาคม":"")
++((new SimpleDateFormat("dd MM yyyy").format(new Date()).substring(3,5)).equals("11")?"พฤศจิกายน":"")
++((new SimpleDateFormat("dd MM yyyy").format(new Date()).substring(3,5)).equals("12")?"ธันวาคม":"")
++ " " + (Integer.parseInt(new SimpleDateFormat("dd MM yyyy").format(new Date()).substring(6,10))-543)]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6891a0b2-5406-4fc6-b9e9-267d2d2cecb0" x="0" y="32" width="510" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="12" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ร้าน " + $F{company_name}+" สาขา " +$F{major_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1da22159-b222-46e3-b518-27a6f2e2f334" x="1" y="52" width="509" height="23"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["เลขประจำตัวผู้เสียภาษี "+$F{tax_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0486917c-dcdf-42ae-a991-fd96b405a014" x="0" y="74" width="510" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{major_address}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement uuid="cf59c2f6-9e8c-41a1-8bdc-bfcfb6877381" positionType="FixRelativeToBottom" x="-36" y="35" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="8930dcfd-8338-4fd5-92f5-cafdedda7d20" style="Column header" x="1" y="20" width="46" height="15" forecolor="#000000"/>
+				<textElement>
+					<font fontName="Tahoma" size="10" isBold="false" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[รหัสสินค้า]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="515485b8-e4a5-460b-bdb8-f1fb42e7c603" style="Column header" x="46" y="20" width="205" height="15" forecolor="#000000"/>
+				<textElement>
+					<font fontName="Tahoma" size="10" isBold="false" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[รายการ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b4445d67-5d31-4dbc-a458-09a3ba856269" style="Column header" x="321" y="20" width="70" height="15" forecolor="#000000"/>
+				<textElement>
+					<font fontName="Tahoma" size="10" isBold="false" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ราคาต่อหน่วย]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0d418d02-93b0-4146-8465-46ad31cc8841" style="Column header" x="391" y="20" width="79" height="15" forecolor="#000000"/>
+				<textElement>
+					<font fontName="Tahoma" size="10" isBold="false" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[จำนวนเงิน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a98c1764-3d2f-44b3-a314-fbf2f6b47412" style="Column header" x="251" y="20" width="70" height="15" forecolor="#000000"/>
+				<textElement>
+					<font fontName="Tahoma" size="10" isBold="false" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[จำนวน]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="19" splitType="Stretch">
+			<line>
+				<reportElement uuid="62854563-3a9d-4f8c-bfb6-dcd115ecce80" positionType="FixRelativeToBottom" x="-36" y="15" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement uuid="e33e349e-7887-4178-a44a-2638ce3d4823" style="Detail" x="0" y="1" width="47" height="15" forecolor="#000000"/>
+				<textElement>
+					<font fontName="Tahoma" size="10" isItalic="true" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mobile_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="dc69ab39-8197-4c81-8ce9-4d8fc3e60da0" style="Detail" x="321" y="0" width="70" height="15" forecolor="#000000"/>
+				<textElement>
+					<font fontName="Tahoma" size="10" isItalic="true" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{price_sale}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="18519c34-6395-4fa8-abe2-0ec3ac261c42" style="Detail" x="391" y="0" width="79" height="15" forecolor="#000000"/>
+				<textElement>
+					<font fontName="Tahoma" size="10" isItalic="true" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{price_sum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b392c3f0-3897-4851-b517-3bc7402dd53e" style="Detail" x="46" y="0" width="205" height="17" forecolor="#000000"/>
+				<textElement>
+					<font fontName="Tahoma" size="10" isItalic="true" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mobile_type}+" "+ $F{mobile}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="875de6e4-3cc9-4275-a2ab-16a053b3ba67" style="Detail" x="251" y="1" width="70" height="15" forecolor="#000000"/>
+				<textElement>
+					<font fontName="Tahoma" size="10" isItalic="true" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{quantity}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="55df743f-6a1b-4e10-ac07-c7b048e1c1ad" x="484" y="0" width="26" height="16"/>
+				<textElement>
+					<font fontName="Tahoma" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[บาท]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="80" splitType="Stretch">
+			<textField>
+				<reportElement uuid="fac68c54-efb4-4d25-9d1a-b1c74be31a41" x="391" y="1" width="79" height="17"/>
+				<textElement textAlignment="Right">
+					<font fontName="Tahoma" size="10" isBold="false" isItalic="true" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{price_total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1e438517-1c5c-49f1-94ee-e8954081c9f0" x="321" y="63" width="189" height="16"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ผู้รับเงิน "+ $F{fname}+"  "+$F{lname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="55df743f-6a1b-4e10-ac07-c7b048e1c1ad" x="321" y="0" width="55" height="18"/>
+				<textElement>
+					<font fontName="Tahoma" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[รวมเงิน]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fac68c54-efb4-4d25-9d1a-b1c74be31a41" x="321" y="18" width="55" height="17"/>
+				<textElement>
+					<font fontName="Tahoma" size="10" isBold="false" isItalic="true" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ภาษี("+$F{tax_rate}+"%)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fac68c54-efb4-4d25-9d1a-b1c74be31a41" x="391" y="18" width="79" height="17"/>
+				<textElement textAlignment="Right">
+					<font fontName="Tahoma" size="10" isBold="false" isItalic="true" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{price_tax}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="55df743f-6a1b-4e10-ac07-c7b048e1c1ad" x="484" y="17" width="26" height="18"/>
+				<textElement>
+					<font fontName="Tahoma" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[บาท]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="55df743f-6a1b-4e10-ac07-c7b048e1c1ad" x="484" y="0" width="26" height="18"/>
+				<textElement>
+					<font fontName="Tahoma" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[บาท]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="55df743f-6a1b-4e10-ac07-c7b048e1c1ad" x="321" y="35" width="55" height="18"/>
+				<textElement>
+					<font fontName="Tahoma" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[รวมทั้งสิ้น]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="55df743f-6a1b-4e10-ac07-c7b048e1c1ad" x="484" y="35" width="26" height="18"/>
+				<textElement>
+					<font fontName="Tahoma" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[บาท]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fac68c54-efb4-4d25-9d1a-b1c74be31a41" x="391" y="36" width="79" height="17"/>
+				<textElement textAlignment="Right">
+					<font fontName="Tahoma" size="10" isBold="false" isItalic="true" pdfFontName="C:\Users\Hippo-G8\Desktop\cloud\build\web\WEB-INF\classes\tahoma.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{price_end}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

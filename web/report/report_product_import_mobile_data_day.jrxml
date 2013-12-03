@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report_product_import_mobile_data_day" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0397a4c2-a1d6-492e-b0d3-1551e13fa85f">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM tb_manage_data_product_mobile
+JOIN tb_manage_data_product_type_mobile ON tb_manage_data_product_mobile.mobile_type_id = tb_manage_data_product_type_mobile.mobile_type_id]]>
+	</queryString>
+	<field name="mobile_id" class="java.lang.Integer"/>
+	<field name="mobile" class="java.lang.String"/>
+	<field name="mobile_type" class="java.lang.String"/>
+	<field name="price_buy" class="java.lang.Double"/>
+	<field name="quantity" class="java.lang.Integer"/>
+	<field name="detail" class="java.lang.String"/>
+	<field name="supplier" class="java.lang.String"/>
+	<field name="date_import" class="java.sql.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="a917ab0c-9ff4-45f0-b8df-eb21be3cedf6" style="Title" x="0" y="13" width="263" height="33" forecolor="#009B00"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Angsana New" size="14" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[รายงานข้อมูลการนำเข้าโทรศัพท์ (รายวัน)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="344ef7dc-0dba-4690-b4ce-1dfd039cf40e" style="SubTitle" x="100" y="46" width="174" height="22" forecolor="#009B00"/>
+				<textElement>
+					<font fontName="Angsana New" size="12" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[ระบบบริหารจัดการร้านโทรศัพท์มือถือ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement uuid="4f7dd7a2-a0d8-440f-b3ef-1b967265c13c" positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="c05ce3e9-a217-4192-9f24-28e0e3fe4ea4" style="Column header" x="0" y="19" width="21" height="15" forecolor="#0000FF"/>
+				<textElement>
+					<font fontName="Angsana New" size="12" isBold="true" isItalic="false" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[รหัส]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="16092b2c-ec95-46ba-b43e-749edf3d79c6" style="Column header" x="21" y="19" width="69" height="15" forecolor="#0000FF"/>
+				<textElement>
+					<font fontName="Angsana New" size="12" isBold="true" isItalic="false" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[ยี่ห้อ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="82a99d0b-0aea-46a6-8e7c-882ee8ced517" style="Column header" x="160" y="19" width="45" height="15" forecolor="#0000FF"/>
+				<textElement>
+					<font fontName="Angsana New" size="12" isBold="true" isItalic="false" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[ราคา]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bb8cbbcb-39f3-4df6-97f9-f9da4c2d9b0b" style="Column header" x="205" y="19" width="35" height="15" forecolor="#0000FF"/>
+				<textElement>
+					<font fontName="Angsana New" size="12" isBold="true" isItalic="false" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[จำนวน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6a52c085-6c9b-48c2-92da-a6ca67ec0352" style="Column header" x="240" y="19" width="213" height="15" forecolor="#0000FF"/>
+				<textElement>
+					<font fontName="Angsana New" size="12" isBold="true" isItalic="false" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[รายละเอียด]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="373adca2-f70b-4d43-bba4-01fc735117db" style="Column header" x="453" y="19" width="70" height="15" forecolor="#0000FF"/>
+				<textElement>
+					<font fontName="Angsana New" size="12" isBold="true" isItalic="false" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[คู่ค้า]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="83538250-989e-48fc-abb7-17da55dda07f" style="Column header" x="523" y="19" width="29" height="15" forecolor="#0000FF"/>
+				<textElement>
+					<font fontName="Angsana New" size="12" isBold="true" isItalic="false" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[วันที่]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="238215af-e4aa-45a3-adf1-fd951e6fbd3c" style="Column header" x="90" y="19" width="70" height="15" forecolor="#0000FF"/>
+				<textElement>
+					<font fontName="Angsana New" size="12" isBold="true" isItalic="false" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[รุ่น]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement uuid="c8fddcae-d77f-4111-b1d6-fee0bcaa45af" positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement uuid="0f646290-40b2-492a-947d-9e3e1a9b40c9" style="Detail" x="0" y="0" width="21" height="15" forecolor="#007400"/>
+				<textElement>
+					<font fontName="Angsana New" size="12" isBold="false" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mobile_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="00622847-a553-4e64-8ea3-5e6cb3aa682f" style="Detail" x="21" y="0" width="69" height="15" forecolor="#007400"/>
+				<textElement>
+					<font fontName="Angsana New" size="12" isBold="false" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mobile_type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a0e0076d-6909-46ab-9955-02402cf0f247" style="Detail" x="205" y="0" width="35" height="15" forecolor="#007400"/>
+				<textElement>
+					<font fontName="Angsana New" size="12" isBold="false" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4bb5a4b6-cbe3-4e9f-a06e-8c3cd66b8c2a" style="Detail" x="240" y="0" width="213" height="15" forecolor="#007400"/>
+				<textElement>
+					<font fontName="Angsana New" size="12" isBold="false" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detail}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a9274f2e-897e-415b-9d2a-574d1ad74df4" style="Detail" x="453" y="0" width="70" height="15" forecolor="#007400"/>
+				<textElement>
+					<font fontName="Angsana New" size="12" isBold="false" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{supplier}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="293827da-05b9-4c7e-8b45-327e9169224b" style="Detail" x="523" y="0" width="29" height="15" forecolor="#007400"/>
+				<textElement>
+					<font fontName="Angsana New" size="12" isBold="false" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date_import}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1f1c5a17-3468-42b8-afff-e1892d06e768" style="Detail" x="90" y="1" width="70" height="15" forecolor="#007400"/>
+				<textElement>
+					<font fontName="Angsana New" size="12" isBold="false" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mobile}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9470a174-36ec-4219-900f-3617d35db55d" style="Detail" x="160" y="0" width="45" height="15" forecolor="#007400"/>
+				<textElement>
+					<font fontName="Angsana New" size="12" isBold="false" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{price_buy}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement uuid="df6af036-f59d-41f2-881f-5cea92b9c085" positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="f41051d1-4a66-438c-9921-ccc812ac66da" style="Column header" x="433" y="0" width="80" height="20" backcolor="#0000FF"/>
+				<textElement textAlignment="Right">
+					<font fontName="Angsana New" size="12" isBold="false" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA["หน้า "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="821a438c-8d75-4174-a722-645b64a8e77e" style="Column header" x="513" y="0" width="40" height="20" backcolor="#0000FF"/>
+				<textElement>
+					<font fontName="Angsana New" size="12" isBold="false" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="b1c808eb-418b-43ea-a993-f05439f0f0f3" style="Column header" x="0" y="0" width="197" height="20" backcolor="#0000FF"/>
+				<textElement>
+					<font fontName="Angsana New" size="12" isBold="false" pdfFontName="C:\Users\Admin\Desktop\project\cloud\build\web\WEB-INF\classes\THSarabun_0.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

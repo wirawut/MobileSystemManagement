@@ -1,0 +1,1 @@
+java -jar "D:\sales_forecasting_system\dist\sales_forecasting_system.jar"

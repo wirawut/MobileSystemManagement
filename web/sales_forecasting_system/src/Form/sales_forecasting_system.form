@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="jMenu1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#xe40;&#xe21;&#xe19;&#xe39;"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&#xe43;&#xe2b;&#xe21;&#xe48;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem2ActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="mnExit">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&#xe2d;&#xe2d;&#xe01;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mnExitActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#xe23;&#xe32;&#xe22;&#xe07;&#xe32;&#xe19;"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&#xe23;&#xe32;&#xe22;&#xe07;&#xe32;&#xe19;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem1ActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&#xe01;&#xe23;&#xe32;&#xe1f;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem3ActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="mnHelp">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#xe0a;&#xe48;&#xe27;&#xe22;&#xe40;&#xe2b;&#xe25;&#xe37;&#xe2d;"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="mHelp">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+H"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#xe04;&#xe39;&#xe48;&#xe21;&#xe37;&#xe2d;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mHelpActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&#xe40;&#xe01;&#xe35;&#xe48;&#xe22;&#xe27;&#xe01;&#xe31;&#xe1a;&#xe40;&#xe23;&#xe32;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem4ActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar1"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="formMouseClicked"/>
+    <EventHandler event="windowOpened" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowOpened"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jScrollPane1" pref="360" max="32767" attributes="0"/>
+                          <Component id="jPanel2" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="txtSearch" min="-2" pref="33" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
+                      <Component id="jLabel5" min="-2" pref="342" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="22" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtSearch" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="jScrollPane1" pref="0" max="32767" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder justification="2" position="2" title="&#xe01;&#xe32;&#xe23;&#xe08;&#xe31;&#xe14;&#xe01;&#xe32;&#xe23;&#xe02;&#xe49;&#xe2d;&#xe21;&#xe39;&#xe25;&#xe17;&#xe35;&#xe48;&#xe15;&#xe49;&#xe2d;&#xe07;&#xe01;&#xe32;&#xe23;&#xe1e;&#xe22;&#xe32;&#xe01;&#xe23;&#xe13;&#xe4c;">
+              <Font PropertyName="font" name="Tahoma" size="14" style="1"/>
+              <Color PropertyName="color" blue="99" green="99" red="0" type="rgb"/>
+            </TitledBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="&#xe08;&#xe31;&#xe14;&#xe01;&#xe32;&#xe23;&#xe02;&#xe49;&#xe2d;&#xe21;&#xe39;&#xe25;&#xe17;&#xe35;&#xe48;&#xe15;&#xe49;&#xe2d;&#xe07;&#xe01;&#xe32;&#xe23;&#xe1e;&#xe22;&#xe32;&#xe01;&#xe23;&#xe13;&#xe4c;"/>
+      </AccessibilityProperties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="cmdInsert" min="-2" pref="49" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="cmdClear" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="cmdDeleteAll" min="-2" pref="49" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="cmdPrint" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="cmdHelp" alignment="0" min="-2" pref="49" max="-2" attributes="0"/>
+                              <Component id="cmdDelete" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="cmdUpdate" max="32767" attributes="0"/>
+                              <Component id="cmdChart" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="txtRange" min="-2" pref="34" max="-2" attributes="0"/>
+                              <Component id="cbUnitCost" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtSale" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
+                              <Component id="txtCost" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txtRange" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txtCost" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txtSale" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="cbUnitCost" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="cmdClear" min="-2" pref="33" max="-2" attributes="0"/>
+                              <Component id="cmdInsert" min="-2" pref="33" max="-2" attributes="0"/>
+                              <Component id="cmdDelete" alignment="0" min="-2" pref="33" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="cmdPrint" min="-2" pref="31" max="-2" attributes="0"/>
+                              <Component id="cmdHelp" min="-2" pref="31" max="-2" attributes="0"/>
+                              <Component id="cmdDeleteAll" min="-2" pref="31" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="cmdUpdate" min="-2" pref="33" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="cmdChart" min="-2" pref="32" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="34" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="cmdInsert">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Form/add.png"/>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="&#xe40;&#xe1e;&#xe34;&#xe48;&#xe21;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdInsertActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtRange">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="66" red="ff" type="rgb"/>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="&#xe01;&#xe23;&#xe2d;&#xe01;&#xe25;&#xe33;&#xe14;&#xe31;&#xe1a;&#xe17;&#xe35;&#xe48;&#xe02;&#xe2d;&#xe07;&#xe40;&#xe14;&#xe37;&#xe2d;&#xe19;&#xe2b;&#xe23;&#xe37;&#xe2d;&#xe1b;&#xe35;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtCost">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="&#xe01;&#xe23;&#xe2d;&#xe01;&#xe04;&#xe48;&#xe32;&#xe43;&#xe0a;&#xe49;&#xe08;&#xe48;&#xe32;&#xe22;&#xe23;&#xe27;&#xe21;&#xe17;&#xe31;&#xe49;&#xe07;&#xe2b;&#xe21;&#xe14;&#xe42;&#xe14;&#xe22;&#xe04;&#xe48;&#xe32;&#xe19;&#xe35;&#xe49;&#xe44;&#xe14;&#xe49;&#xe21;&#xe32;&#xe08;&#xe32;&#xe01;&#xe01;&#xe32;&#xe23;&#xe2a;&#xe23;&#xe38;&#xe1b;&#xe22;&#xe2d;&#xe14;&#xe23;&#xe27;&#xe21;&#xe04;&#xe48;&#xe32;&#xe43;&#xe0a;&#xe49;&#xe08;&#xe48;&#xe32;&#xe22;&#xe08;&#xe32;&#xe01;&#xe07;&#xe1a;&#xe17;&#xe32;&#xe07;&#xe1a;&#xe31;&#xe0d;&#xe0a;&#xe35;&#xe2b;&#xe23;&#xe37;&#xe2d;&#xe41;&#xe2b;&#xe25;&#xe48;&#xe07;&#xe02;&#xe49;&#xe2d;&#xe21;&#xe39;&#xe25;&#xe17;&#xe35;&#xe48;&#xe44;&#xe14;&#xe49;&#xe21;&#xe35;&#xe01;&#xe32;&#xe23;&#xe15;&#xe23;&#xe27;&#xe08;&#xe2a;&#xe2d;&#xe1a;&#xe27;&#xe48;&#xe32;&#xe16;&#xe39;&#xe01;&#xe15;&#xe49;&#xe2d;&#xe07;&#xe40;&#xe23;&#xe35;&#xe22;&#xe1a;&#xe23;&#xe49;&#xe2d;&#xe22;&#xe40;&#xe40;&#xe25;&#xe49;&#xe27;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCostActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtSale">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="0" red="ff" type="rgb"/>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="&#xe01;&#xe23;&#xe2d;&#xe01;&#xe22;&#xe2d;&#xe14;&#xe02;&#xe32;&#xe22;&#xe23;&#xe27;&#xe21;&#xe17;&#xe31;&#xe49;&#xe07;&#xe2b;&#xe21;&#xe14;&#xe42;&#xe14;&#xe22;&#xe04;&#xe48;&#xe32;&#xe19;&#xe35;&#xe49;&#xe44;&#xe14;&#xe49;&#xe21;&#xe32;&#xe08;&#xe32;&#xe01;&#xe01;&#xe32;&#xe23;&#xe2a;&#xe23;&#xe38;&#xe1b;&#xe22;&#xe2d;&#xe14;&#xe23;&#xe27;&#xe21;&#xe22;&#xe2d;&#xe14;&#xe02;&#xe32;&#xe22;&#xe08;&#xe32;&#xe01;&#xe07;&#xe1a;&#xe17;&#xe32;&#xe07;&#xe1a;&#xe31;&#xe0d;&#xe0a;&#xe35;&#xe2b;&#xe23;&#xe37;&#xe2d;&#xe41;&#xe2b;&#xe25;&#xe48;&#xe07;&#xe02;&#xe49;&#xe2d;&#xe21;&#xe39;&#xe25;&#xe17;&#xe35;&#xe48;&#xe44;&#xe14;&#xe49;&#xe21;&#xe35;&#xe01;&#xe32;&#xe23;&#xe15;&#xe23;&#xe27;&#xe08;&#xe2a;&#xe2d;&#xe1a;&#xe27;&#xe48;&#xe32;&#xe16;&#xe39;&#xe01;&#xe15;&#xe49;&#xe2d;&#xe07;&#xe40;&#xe23;&#xe35;&#xe22;&#xe1a;&#xe23;&#xe49;&#xe2d;&#xe22;&#xe40;&#xe40;&#xe25;&#xe49;&#xe27;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSaleActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="0" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&#xe15;&#xe49;&#xe19;&#xe17;&#xe38;&#xe19;&#xe02;&#xe32;&#xe22;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="0" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&#xe22;&#xe2d;&#xe14;&#xe02;&#xe32;&#xe22;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="cbUnitCost">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="99" red="ff" type="rgb"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="7">
+                <StringItem index="0" value="&#xe1a;&#xe32;&#xe17;"/>
+                <StringItem index="1" value="&#xe14;&#xe2d;&#xe25;&#xe25;&#xe32;&#xe2b;&#xe4c;"/>
+                <StringItem index="2" value="&#xe22;&#xe39;&#xe42;&#xe23;"/>
+                <StringItem index="3" value="&#xe40;&#xe22;&#xe19;"/>
+                <StringItem index="4" value="&#xe1f;&#xe23;&#xe31;&#xe07;&#xe01;&#xe4c;"/>
+                <StringItem index="5" value="&#xe27;&#xe2d;&#xe19;"/>
+                <StringItem index="6" value="&#xe23;&#xe39;&#xe40;&#xe1b;&#xe35;&#xe22;&#xe2b;&#xe4c;"/>
+              </StringArray>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="&#xe2b;&#xe19;&#xe48;&#xe27;&#xe22;&#xe02;&#xe2d;&#xe07;&#xe40;&#xe07;&#xe34;&#xe19;&#xe15;&#xe49;&#xe2d;&#xe07;&#xe40;&#xe1b;&#xe47;&#xe19;&#xe1b;&#xe23;&#xe30;&#xe40;&#xe20;&#xe17;&#xe40;&#xe14;&#xe35;&#xe22;&#xe27;&#xe01;&#xe31;&#xe19;&#xe17;&#xe31;&#xe49;&#xe07;&#xe2b;&#xe21;&#xe14;&#xe40;&#xe1e;&#xe37;&#xe48;&#xe2d;&#xe43;&#xe2b;&#xe49;&#xe07;&#xe48;&#xe32;&#xe22;&#xe15;&#xe48;&#xe2d;&#xe01;&#xe32;&#xe23;&#xe04;&#xe33;&#xe19;&#xe27;&#xe19;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="0" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&#xe40;&#xe14;&#xe37;&#xe2d;&#xe19;/&#xe1b;&#xe35;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel4">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="0" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&#xe2a;&#xe01;&#xe38;&#xe25;&#xe40;&#xe07;&#xe34;&#xe19;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="cmdClear">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Form/remove.png"/>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="&#xe40;&#xe04;&#xe25;&#xe35;&#xe22;&#xe23;&#xe4c;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdClearActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="cmdDelete">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Form/delete.png"/>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="&#xe25;&#xe1a;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdDeleteActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="cmdUpdate">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Form/process.png"/>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="&#xe41;&#xe01;&#xe49;&#xe44;&#xe02;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdUpdateActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="cmdDeleteAll">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Form/new.png"/>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="&#xe40;&#xe23;&#xe34;&#xe48;&#xe21;&#xe43;&#xe2b;&#xe21;&#xe48;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdDeleteAllActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="cmdPrint">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="8" style="0"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Form/printer.png"/>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="&#xe1e;&#xe34;&#xe21;&#xe1e;&#xe4c;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdPrintActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="cmdHelp">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="8" style="0"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Form/help.png"/>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="&#xe04;&#xe39;&#xe48;&#xe21;&#xe37;&#xe2d;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdHelpActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="cmdChart">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Form/chart_bar.png"/>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="&#xe01;&#xe23;&#xe32;&#xe1f;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdChartActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="tableForcast">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="cc" red="0" type="rgb"/>
+            </Property>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="5" rowCount="4">
+                <Column editable="true" title="&#xe40;&#xe14;&#xe37;&#xe2d;&#xe19;/&#xe1b;&#xe35;" type="java.lang.Object"/>
+                <Column editable="true" title="&#xe15;&#xe49;&#xe19;&#xe17;&#xe38;&#xe19;&#xe02;&#xe32;&#xe22;" type="java.lang.Object"/>
+                <Column editable="false" title="&#xe22;&#xe2d;&#xe14;&#xe02;&#xe32;&#xe22;" type="java.lang.Object"/>
+                <Column editable="true" title="&#xe01;&#xe33;&#xe44;&#xe23;" type="java.lang.Object"/>
+                <Column editable="true" title="&#xe2b;&#xe19;&#xe48;&#xe27;&#xe22;" type="java.lang.Object"/>
+              </Table>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="&#xe15;&#xe32;&#xe23;&#xe32;&#xe07;&#xe41;&#xe2a;&#xe14;&#xe07;&#xe02;&#xe49;&#xe2d;&#xe21;&#xe39;&#xe25;&#xe17;&#xe35;&#xe48;&#xe15;&#xe49;&#xe2d;&#xe07;&#xe01;&#xe32;&#xe23;&#xe19;&#xe33;&#xe21;&#xe32;&#xe1e;&#xe22;&#xe32;&#xe01;&#xe23;&#xe13;&#xe4c;&#xe22;&#xe2d;&#xe14;&#xe02;&#xe32;&#xe22;"/>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="jLabel5">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="36" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#xe23;&#xe30;&#xe1a;&#xe1a;&#xe1e;&#xe22;&#xe32;&#xe01;&#xe23;&#xe13;&#xe4c;&#xe22;&#xe2d;&#xe14;&#xe02;&#xe32;&#xe22;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtSearch">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="ff" red="99" type="rgb"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="&#xe40;&#xe14;&#xe37;&#xe2d;&#xe19;/&#xe1b;&#xe35;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSearchActionPerformed"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtSearchKeyReleased"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel6">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="0" red="99" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#xe04;&#xe49;&#xe19;&#xe2b;&#xe32;"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="&#xe01;&#xe32;&#xe23;&#xe1e;&#xe22;&#xe32;&#xe01;&#xe23;&#xe13;&#xe4c;">
+              <Font PropertyName="font" name="Tahoma" size="14" style="1"/>
+              <Color PropertyName="color" blue="0" green="0" red="ff" type="rgb"/>
+            </TitledBorder>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="lbCostForecast" min="-2" pref="125" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="txtForecast" min="-2" pref="107" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                  <Component id="cmdForecast" min="-2" pref="49" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lbCostForecast" min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="txtForecast" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="cmdForecast" min="-2" pref="44" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JTextField" name="txtForecast">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="ff" red="0" type="rgb"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbCostForecast">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="0" red="0" type="rgb"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="lbCostForecastPropertyChange"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="cmdForecast">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="2555 edcrub huajuckTH" size="24" style="0"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Form/chart_line.png"/>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="&#xe1e;&#xe22;&#xe32;&#xe01;&#xe23;&#xe13;&#xe4c;&#xe22;&#xe2d;&#xe14;&#xe02;&#xe32;&#xe22;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdForecastActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
